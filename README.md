@@ -1,2 +1,2 @@
 ### The Odin Project
-Repository for my T.O.P courses;
+Repository for my T.O.P course;
