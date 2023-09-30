@@ -1,22 +1,37 @@
-body {
+html, body {
   margin: 0;
   padding: 0;
-  background-color: #f2f3f4;
+  height: 100%;
   color: #0f0f0f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(#ffffff, #d6e4ff);
 }
 
 #logo {
   display: block;
   margin: 0 auto;
-  width: 12%;
+  width: 10%;
+}
+
+#negroni_div {
+  background-color: #eada52;
+}
+#martini_div {
+  background-color: #579abe;
+}
+#mojito_div {
+  background-color: #03c03c;
 }
 
 h1 {
   color: #0f0f0f;
   margin-bottom: 0;
-  font-family: Garamond, serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
-  
+
 .heading {
   text-align: center;
   padding: 20px;
@@ -25,20 +40,20 @@ h1 {
 .content {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 2em;
 }
   
 .content div {
   text-align: center;
-  background-color: #cccccc;
-  border-radius: 10px;
-  padding: 20px;
+  /*border-radius: 10px;*/
+  padding: 1.5em;
   width: 25%;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
   
 .content img {
@@ -48,11 +63,12 @@ h1 {
   max-height: 100%;
   object-fit: fill;
   border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
   
 .content p {
   color: #3f3f3f;
-  margin: 10px 0;
+  margin: 2em 0 0 0;
 }
   
 a {
