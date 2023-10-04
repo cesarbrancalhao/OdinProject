@@ -2,6 +2,20 @@ let playerScore = 0;
 let computerScore = 0;
 let roundWinner = '';
 
+const scoreInfo = document.getElementById('scoreInfo');
+const scoreMessage = document.getElementById('scoreMessage');
+const playerScorePara = document.getElementById('playerScore');
+const computerScorePara = document.getElementById('computerScore');
+const playerChoice = document.getElementById('playerChoice');
+const computerChoice = document.getElementById('computerChoice');
+const rockBtn = document.getElementById('rockBtn');
+const paperBtn = document.getElementById('paperBtn');
+const scissorsBtn = document.getElementById('scissorsBtn');
+
+rockBtn.addEventListener('click', () => handleClick('Rock'));
+paperBtn.addEventListener('click', () => handleClick('Paper'));
+scissorsBtn.addEventListener('click', () => handleClick('Scissors'));
+
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
         roundWinner = 'tie';
@@ -25,6 +39,22 @@ function playRound(playerSelection, computerSelection) {
     updateScoreMessage(roundWinner, playerSelection, computerSelection);
 }
 
+function updateScoreMessage(winner, playerSelection, computerSelection) {
+    if (winner === 'player') {
+        scoreMessage.textContent = `${playerSelection}
+         beats ${computerSelection.toLowerCase()}`;
+        return
+    }
+    if (winner === 'computer') {
+        scoreMessage.textContent = `${playerSelection}
+         is beaten by ${computerSelection.toLowerCase()}`;
+        return
+    }
+
+    scoreMessage.textContent = `${playerSelection}
+     ties with ${computerSelection.toLowerCase()}`;
+}
+
 function getComputerChoice() {
     let randomNumber = Math.floor(Math.random() * 3)
     switch (randomNumber) {
@@ -35,29 +65,6 @@ function getComputerChoice() {
         case 2:
             return 'Scissors';
     }
-}
-
-// UI
-
-const scoreInfo = document.getElementById('scoreInfo');
-const scoreMessage = document.getElementById('scoreMessage');
-const playerScorePara = document.getElementById('playerScore');
-const computerScorePara = document.getElementById('computerScore');
-const playerChoice = document.getElementById('playerChoice');
-const computerChoice = document.getElementById('computerChoice');
-const rockBtn = document.getElementById('rockBtn');
-const paperBtn = document.getElementById('paperBtn');
-const scissorsBtn = document.getElementById('scissorsBtn');
-
-rockBtn.addEventListener('click', () => handleClick('Rock'));
-paperBtn.addEventListener('click', () => handleClick('Paper'));
-scissorsBtn.addEventListener('click', () => handleClick('Scissors'));
-
-function handleClick(playerSelection) {
-    const computerSelection = getComputerChoice();
-    playRound(playerSelection, computerSelection);
-    updateChoices(playerSelection, computerSelection);
-    updateScore();
 }
 
 function updateChoices(playerSelection, computerSelection) {
@@ -99,18 +106,9 @@ function updateScore() {
     computerScorePara.textContent = `Computer: ${computerScore}`;
 }
 
-function updateScoreMessage(winner, playerSelection, computerSelection) {
-    if (winner === 'player') {
-        scoreMessage.textContent = `${playerSelection}
-         beats ${computerSelection.toLowerCase()}`;
-        return
-    }
-    if (winner === 'computer') {
-        scoreMessage.textContent = `${playerSelection}
-         is beaten by ${computerSelection.toLowerCase()}`;
-        return
-    }
-
-    scoreMessage.textContent = `${playerSelection}
-     ties with ${computerSelection.toLowerCase()}`;
+function handleClick(playerSelection) {
+    const computerSelection = getComputerChoice();
+    playRound(playerSelection, computerSelection);
+    updateChoices(playerSelection, computerSelection);
+    updateScore();
 }
