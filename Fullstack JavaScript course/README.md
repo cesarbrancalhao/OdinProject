@@ -1,4 +1,4 @@
-## Full Stack Javascript path repository
+## Full Stack Javascript path directory
 An in depth path of JavaScript courses.
 
 Intermediate HTML/CSS course:
