@@ -1,2 +1,9 @@
-## Foundations course repository
-Introduction to Git, Linux, IDE's and code editors, foundations of HTML, CSS and Flexbox, JS fundamentals and tools, DOM manipulation and introduction to Node.Js.
+## Foundations course
+An introduction to:
+- Git
+- Linux
+- IDE's and code editors
+- Foundations of HTML, CSS and Flexbox
+- JS fundamentals and tools
+- DOM manipulation
+- Introduction to Node.Js.
