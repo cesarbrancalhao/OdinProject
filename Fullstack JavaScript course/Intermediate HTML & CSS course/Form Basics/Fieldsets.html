@@ -1,0 +1,50 @@
+<!-- Fieldsets are containers that group related form inputs -->
+<fieldset>
+    <legend>Contact Details</legend>
+    <!-- A legend should always come right after an opening fieldset tag -->
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="phone_number">Phone Number:</label>
+    <input type="tel" id="phone_number" name="phone_number">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+</fieldset>
+
+<fieldset>
+    <legend>Delivery Details</legend>
+
+    <label for="street_address">Street Address:</label>
+    <input type="text" id="street_address" name="street_address">
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city">
+
+    <label for="zip_code">Zip Code:</label>
+    <input type="text" id="zip_code" name="zip_code">
+</fieldset>
+
+<!-- A common use-case for these elements is using a fieldset to
+    group radio buttons and using a legend to communicate to
+    the user what each of the options is ultimately for -->
+
+<fieldset>
+    <legend>What would you like to drink?</legend>
+    
+    <div>
+        <input type="radio" name="drink" id="coffee" value="coffee">
+        <label for="coffee">Coffee</label>
+    </div>
+    
+    <div>
+        <input type="radio" name="drink" id="tea" value="tea">
+        <label for="tea">Tea</label>
+    </div>
+    
+    <div>
+        <input type="radio" name="drink" id="soda" value="soda">
+        <label for="soda">Soda</label>
+    </div>
+</fieldset>
