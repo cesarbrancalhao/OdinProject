@@ -7,7 +7,7 @@ Intermediate HTML/CSS course:
 - Frameworks and preprocessors
 - XML and SVG modules
 - Advanced grid/flexbox properties
-- Projects
+- Projects:
   - [Sign-up Form](https://cesarbrancalhao.github.io/Odin.Form/)
 
 
