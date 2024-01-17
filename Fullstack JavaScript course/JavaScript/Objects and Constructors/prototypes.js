@@ -56,5 +56,10 @@ player2.sayHello(); // logs "Hello, I'm a player!"
 
 Object.getPrototypeOf(Player.prototype) === Object.prototype; // true
 
-// Output may slightly differ based on the browser
 player1.valueOf(); // Output: Object { name: "steve", marker: "X", sayName: sayName() }
+// Output may slightly differ based on the browser
+
+// This is how you know 'valueof()' is defined in the prototype, not in the Player constructor:
+player1.hasOwnProperty('valueOf'); // false
+Object.prototype.hasOwnProperty('valueOf'); // true
+
