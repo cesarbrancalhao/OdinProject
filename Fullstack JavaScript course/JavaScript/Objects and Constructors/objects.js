@@ -94,7 +94,7 @@ function Player(name, marker) {
     Exercise
 
         Write a constructor for making “Book” objects. We will revisit this in the project at the end of this lesson.
-        Your book objects should have the book’s title, author, the number of pages,
+        Your book objects should have the book`s title, author, the number of pages,
         and whether or not you have read the book.
 
         Put a function into the constructor that can report the book info like so:
