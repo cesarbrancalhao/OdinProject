@@ -95,8 +95,27 @@ function Player(name, marker) {
         Write a constructor for making “Book” objects. We will revisit this in the project at the end of this lesson.
         Your book objects should have the book’s title, author, the number of pages,
         and whether or not you have read the book.
+
+        Put a function into the constructor that can report the book info like so:
+
+        theHobbit.info() = "The Hobbit by J.R.R. Tolkien, 295 pages, not read yet"
 */
 
-// todo
+function Book(title, writer, author, pages, read) {
 
-theHobbit.info(); // "The Hobbit by J.R.R. Tolkien, 295 pages, not read yet"
+    this.title = title;
+    this.writer = writer;
+    this.author = author;
+    this.pages = pages;
+    this.read = read; // 'y' or 'n'
+
+    this.info = () => {
+        let readMsg = read.includes('y') ? 'already read' : 'not read yet';
+        return `${this.title} by ${this.author}, ${this.pages} pages, ${readMsg}.`;
+    }
+
+}
+
+const theHobbit = new Book('The Hobbit', 'J.R.R. Tolkien', 295, 'n');
+
+console.log(theHobbit.info());
