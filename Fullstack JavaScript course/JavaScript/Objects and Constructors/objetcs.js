@@ -1,8 +1,9 @@
-/*---*/
+/*---*/     // <- these are for visual facilitation only
 
 /*
     Basics of using objects to store and retrieve data
 */
+
 const myObject = {
     property: 'Value!',
     otherProperty: 77,
@@ -11,7 +12,7 @@ const myObject = {
     }
 };
 
-  // dot notation
+// dot notation
 myObject.property; // 'Value!'
 
 // bracket notation
