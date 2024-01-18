@@ -23,7 +23,7 @@ Object.getPrototypeOf(player2) === Player.prototype; // returns true
     */ Object.getPrototypeOf(player1) === Object.getPrototypeOf(player2) /* = true
     
     Because the prototype comes from the constructor and is the same
-    and available for every Player instance.
+    and available for every Player instance
 */
 
 
@@ -75,6 +75,8 @@ Object.prototype.hasOwnProperty('valueOf'); // true
     Prototypal inheritance method
 
     we can use */ Object.setPrototypeOf() /* to set or mutate the prototype
+
+	example:
  */
 
 function Person(name) {
@@ -94,9 +96,12 @@ Player.prototype.getMarker = function() {
   console.log(`My marker is '${this.marker}'`);
 };
 
-// Object.getPrototypeOf(Player.prototype) should
-// return the value of "Person.prototype" instead
-// of "Object.prototype"
+/** 
+	Object.getPrototypeOf(Player.prototype) should
+	return the value of "Person.prototype" instead
+	of "Object.prototype"
+*/
+
 Object.getPrototypeOf(Player.prototype); // returns Object.prototype
 
 // Now make `Player` objects inherit from `Person`
@@ -111,3 +116,16 @@ player2.sayName(); // Hello, I'm also steve!
 
 player1.getMarker(); // My marker is 'X'
 player2.getMarker(); // My marker is 'O'
+
+/**
+	Object.setPrototypeOf() takes two arguments,
+	the first is the inheriting object
+	and the second is the object to inherit from
+
+	Warning: 
+	
+	This doesnt work >> */ Player.prototype = Person.prototype /* <<
+
+	It directly references Person.prototype, instread of copying it
+	Directly referencing let you safely make changes later
+*/
