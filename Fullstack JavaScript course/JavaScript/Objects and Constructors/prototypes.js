@@ -63,3 +63,10 @@ player1.valueOf(); // Output: Object { name: "steve", marker: "X", sayName: sayN
 player1.hasOwnProperty('valueOf'); // false
 Object.prototype.hasOwnProperty('valueOf'); // true
 
+/**
+    The .valueOf() isnt part of the object nor the prototype, it's part of the Object.prototype
+    and every prototype inherits from the Object.prototype by default
+*/
+
+
+/*---*/
