@@ -7,8 +7,9 @@ Intermediate HTML/CSS course:
 - Frameworks and preprocessors
 - XML and SVG modules
 - Advanced grid/flexbox properties
+
 - Projects:
-  - [Sign-up Form](https://cesarbrancalhao.github.io/Odin.Form/) [HTML, CSS]
+  - Sign-up Form [ [Live](https://cesarbrancalhao.github.io/Odin.Form/) | [Source](https://github.com/cesarbrancalhao/Odin.Form) ] - HTML, basic CSS
 
 
 Advanced HTML/CSS course:
@@ -20,6 +21,7 @@ Advanced HTML/CSS course:
 - Media Queries
 - Web Acessibility and WCAG
 
+
 JavaScript course:
 - ES6 Modules
 - JSON and APIs
@@ -29,6 +31,10 @@ JavaScript course:
 - Real world data structures
 - Common algorithms
 - Git Remotes and Testing
+
+- Projects:
+  - Library [ [Live]() | [Source](https://github.com/cesarbrancalhao/Odin.Library) ] - HTML, CSS, JavaScript
+
 
 React course:
 - Components
@@ -44,6 +50,7 @@ React course:
 - State managing/Context API
 - Reducing state
 - Refs and memoization
+
 
 NodeJS course:
 - Debugging Node
