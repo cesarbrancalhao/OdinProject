@@ -13,4 +13,3 @@ Projects:
 - Landing-page [ [Live](https://cesarbrancalhao.github.io/enerfoz_lp/) | [Source](https://github.com/cesarbrancalhao/enerfoz_lp) ] - HTML, CSS
 - Jankenpon [ [Live](https://github.com/cesarbrancalhao/jankenpon) | [Source](https://github.com/cesarbrancalhao/jankenpon) ] - HTML, CSS, JavaScript
 - Etch-a-Sketch [ [Live](https://cesarbrancalhao.github.io/sketchgrid/) | [Source](https://github.com/cesarbrancalhao/sketchgrid) ] - HTML, CSS, JavaScript
-- Admin dashboard [ [Live](https://cesarbrancalhao.github.io/Odin.Dashboard/) | [Source](https://github.com/cesarbrancalhao/Odin.Dashboard) ] - HTML, CSS, JavaScript
