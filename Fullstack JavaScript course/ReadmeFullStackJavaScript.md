@@ -37,7 +37,7 @@ JavaScript course:
 - Git Remotes and Testing
 
 - Projects:
-  - Library [ [Live]() | [Source](https://github.com/cesarbrancalhao/Odin.Library) ] - HTML, CSS, JavaScript
+  - Library [ [Live](https://github.com/cesarbrancalhao/Odin.Library) | [Source](https://github.com/cesarbrancalhao/Odin.Library) ] - HTML, CSS, JavaScript
 
 
 React course:
