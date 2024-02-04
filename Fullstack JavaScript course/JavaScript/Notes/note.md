@@ -1,0 +1,2 @@
+As of today (2024-02-04) I'll no longer be taking notes on Github, rather no notes at all besides quick ones for important stuff.
+Reason being my college classes are back and I no longer have that much free time.
