@@ -10,5 +10,5 @@ An introduction to:
 - Grid & Grid + flexbox
 
 Projects:
-    - Sign-up Form [ [Live](https://cesarbrancalhao.github.io/Odin.Form/) | [Source](https://github.com/cesarbrancalhao/Odin.Form) ] - HTML, CSS
-    - Admin dashboard [ [Live](https://cesarbrancalhao.github.io/Odin.Dashboard/) | [Source](https://github.com/cesarbrancalhao/Odin.Dashboard) ] - HTML, CSS, Tailwind, JavaScript
+    - Sign-up Form [ [Live](https://cesarbrancalhao.github.io/Odin.Form/) | [Source](./Form/) ] - HTML, CSS
+    - Admin dashboard [ [Live](https://cesarbrancalhao.github.io/Odin.Dashboard/) | [Source](./Dashboard/) ] - HTML, CSS, Tailwind, JavaScript

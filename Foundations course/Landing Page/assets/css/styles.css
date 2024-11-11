@@ -1,0 +1,141 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #1f2937;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.4em;
+    color: #f9faf8;
+}
+#logo {
+    width: 3.5vw;
+}
+.logo_nome {
+    font-weight: bold;
+}
+.leftH {
+    margin-left: 2.5em;
+}
+.rightH {
+    margin-right: 3em;
+}
+.hlinks a {
+    text-decoration: none;
+    margin: 0 1em 0 1em;
+}
+.hlinks span {
+    font-weight: bold;
+    color: #f9faf8;
+}
+.container {
+    display: flex;
+}
+.top {
+    padding: 2em 3em;
+    background-color: #1f2937;
+    align-items: center;
+    justify-content: space-around;
+}
+.hero {
+    margin: 0;
+    color: #f9faf8;
+    font-size: clamp(44px, 3vw, 58px);
+    font-weight: bolder;
+    min-font-size: 2vw;
+}
+.hero-text {
+    font-size: clamp(16px, 1vw, 22px);
+    color: #e5e7eb;
+}
+.botao {
+    border: 0;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 7px 13px 7px 13px;
+    color: #e5e7eb;
+    background-color: #3882f6;
+}
+.leftT {
+    text-align: left;
+    margin-right: 2vw;
+}
+.rightT {
+    text-align: right;
+    margin-left: 2vw;
+}
+.paineltop {
+    width: 40vw;
+    max-width: 800px;
+    height: auto;
+}
+.mid img {
+    width: 14vw;
+    max-width: 300px;
+    height: auto;
+    border-radius: 14px;
+    border: 3px solid #5493ff;
+}
+.mid {
+    text-align: center;
+    justify-content: space-around;
+    margin: 6% 6vw 6% 6vw;
+}
+.mid p {
+    text-align: center;
+    margin-top: 3%;
+    max-width: 18vw;
+    font-size: 0.8em;
+    color: #757d9d;
+}
+.quote {
+    padding: 2em;
+    background-color: #e5e7eb;
+}
+.quotespace {
+    text-align: right;
+    margin: 0 25vw 0 25vw;
+}
+.quote-text {
+    color: #1f2937;
+    text-align: center;
+    font-size: clamp(35px, 2.5vw, 50px);
+    font-style: italic;
+    font-weight: normal;
+}
+.quote-owner {
+    font-size: clamp(16px, 1vw, 22px);
+    font-weight: bold;
+}
+.bottom {
+    padding: 4vw;
+    justify-content: center;
+}
+.registro {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3882f6;
+    margin: 3vw;
+    padding: 4vw;
+    border-radius: 14px;
+    color: #f9faf8;
+    font-weight: bold;
+}
+#registre-se {
+    margin-left: 2vw;
+    color: #f9faf8;
+    border: 2px solid #e5e7eb;
+}
+footer {
+    padding: 0.5%;
+    text-align: center;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    font-size: 0.6em;
+}

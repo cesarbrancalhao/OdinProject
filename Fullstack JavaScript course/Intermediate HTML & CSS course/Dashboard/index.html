@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Dashboard</title>
+
+    <link href="./src/assets/css/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen bg-gray-100">
+        <!-- Sidebar -->
+        <nav class="w-64 bg-white">
+
+            <h1 class="text-xl font-bold p-5">Dashboard</h1>
+
+            <ul class="space-y-4 mb-2 text-gray-600">
+                <li><a href="#" class="block py-2 px-2 mx-2 rounded hover:bg-blue-500 hover:text-white hover:text-white">Home</a></li>
+                <li><a href="#" class="block py-2 px-2 mx-2 rounded hover:bg-blue-500 hover:text-white hover:text-white">Profile</a></li>
+                <li><a href="#" class="block py-2 px-2 mx-2 rounded hover:bg-blue-500 hover:text-white hover:text-white">Messages</a></li>
+                <li><a href="#" class="block py-2 px-2 mx-2 rounded hover:bg-blue-500 hover:text-white hover:text-white">History</a></li>
+                <li><a href="#" class="block py-2 px-2 mx-2 rounded hover:bg-blue-500 hover:text-white hover:text-white">Tasks</a></li>
+                <li><a href="#" class="block py-2 px-2 mx-2 rounded hover:bg-blue-500 hover:text-white hover:text-white">Communities</a></li>
+            </ul>
+
+            <hr/>
+
+            <ul class="space-y-4 mt-2 text-gray-600">
+                <li><a href="#" class="block py-2 px-2 mx-2 rounded hover:bg-blue-500 hover:text-white hover:text-white">Settings</a></li>
+                <li><a href="#" class="block py-2 px-2 mx-2 rounded hover:bg-blue-500 hover:text-white hover:text-white">Support</a></li>
+                <li><a href="#" class="block py-2 px-2 mx-2 rounded hover:bg-blue-500 hover:text-white hover:text-white">Privacy</a></li>
+            </ul>
+
+        </nav>
+        
+        <!-- Main -->
+        <div class="flex-1 overflow-auto p-10">
+
+            <header class="px-4 py-4 w-full bg-gray-200 rounded-lg">
+
+                <form id="searchForm" class="w-full flex text-center items-center">
+
+                    <img src="./src/assets/img/search.svg" class="rounded-full ml-auto w-7 h-7">
+                    <input type="text" 
+                           class="h-8 pl-4 py-2 mr-auto bg-gray-400 w-[56vw] rounded-full border border-gray-300 
+                                focus:outline-none focus:ring-2 focus:ring-blue-400 
+                                focus:border-transparent text-white placeholder-gray-300" 
+                            placeholder="G-Search..."
+                            id="searchField">
+
+                </form>
+
+                <div class="flex justify-between items-center mt-8 mx-10">
+                    <div>
+                        <h1 class="text-2xl font-bold">Greetings, padawan.</h1>
+                        <p class="mt-2 text-gray-600">Your personalized dashboard.</p>
+                    </div>
+
+                    <div class="items-center">
+                        <img src="./src/assets/img/brancalhao.jpg" class="rounded-full ml-auto mb-2 w-10 h-10">
+
+                        <div class="w-full flex text-center items-center">
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-[0.2em] px-4 rounded-full">New project</button>
+                            <button class="bg-gray-400 hover:bg-blue-700 text-white font-bold py-[0.2em] px-3 ml-2 rounded-full">+</button>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </header>
+
+            <!-- Dashboard -->
+            <main class="my-4 rounded-lg">
+
+                <h1 class="text-1xl font-bold mb-2">My projects</h1>
+                <div class="flex gap-4">
+            
+                    <!-- Projects -->
+                    <section class="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 flex-grow p-3 bg-gray-200 rounded">
+                        
+                        <a href="https://github.com/cesarbrancalhao/OdinProject">
+                            <div class="p-4 border rounded-lg shadow h-[10em] bg-gray-100 hover:bg-blue-500 hover:text-white">
+                                <h2 class="font-bold text-lg">Odin Project</h2>
+                                <p class="mt-2">T.O.P is an open-source curriculum for learning 
+                                    full-stack web development to learn web development for free.</p>
+                            </div>
+                        </a>
+            
+                        <a href="https://github.com/cesarbrancalhao/ADS_IFPR">
+                            <div class="p-4 border rounded-lg shadow h-[10em] bg-gray-100 hover:bg-blue-500 hover:text-white">
+                                <h2 class="font-bold text-lg">ADS - IFPR</h2>
+                                <p class="mt-2">Systems Analysis & Development degree repository.</p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/cesarbrancalhao/planApi">
+                            <div class="p-4 border rounded-lg shadow h-[10em] bg-gray-100 hover:bg-blue-500 hover:text-white">
+                                <h2 class="font-bold text-lg">PlanAPI</h2>
+                                <p class="mt-2">Management application API with Spring Boot and Maven.</p>
+                            </div>
+                        </a>
+            
+                        <a href="https://github.com/cesarbrancalhao/flex-work-manager">
+                            <div class="p-4 border rounded-lg shadow h-[10em] bg-gray-100 hover:bg-blue-500 hover:text-white">
+                                <h2 class="font-bold text-lg">Staff Flex Manager</h2>
+                                <p class="mt-2">Employees management app built with Express.</p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/cesarbrancalhao/Credenciamento_angular">
+                            <div class="p-4 border rounded-lg shadow h-[10em] bg-gray-100 hover:bg-blue-500 hover:text-white">
+                                <h2 class="font-bold text-lg">Angucred</h2>
+                                <p class="mt-2">Simple angular crud app using Viacep API & Bootstrap.</p>
+                            </div>
+                        </a>
+            
+                        <a href="https://github.com/cesarbrancalhao/Notes">
+                            <div class="p-4 border rounded-lg shadow h-[10em] bg-gray-100 hover:bg-blue-500 hover:text-white">
+                                <h2 class="font-bold text-lg">Notes</h2>
+                                <p class="mt-2">Notion study notes deployed.</p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/cesarbrancalhao/IFRS">
+                            <div class="p-4 border rounded-lg shadow h-[10em] bg-gray-100 hover:bg-blue-500 hover:text-white">
+                                <h2 class="font-bold text-lg">Java - IFRS</h2>
+                                <p class="mt-2">Basic Java I to III course.</p>
+                            </div>
+                        </a>
+            
+                        <a href="https://github.com/cesarbrancalhao/guanabara">
+                            <div class="p-4 border rounded-lg shadow h-[10em] bg-gray-100 hover:bg-blue-500 hover:text-white">
+                                <h2 class="font-bold text-lg">Java OOP - Guanabara</h2>
+                                <p class="mt-2">Java OOP course.</p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/cesarbrancalhao">
+                            <div class="p-4 border rounded-lg shadow h-[10em] bg-gray-100 hover:bg-blue-500 hover:text-white">
+                                <h2 class="font-bold text-lg">GitHub</h2>
+                                <p class="mt-2">Check more!</p>
+                            </div>
+                        </a>
+            
+                    </section>
+            
+                    <!-- Side section -->
+                    <section class="flex flex-col gap-4 w-1/3 p-3 rounded h-64 overflow mt-[-0.8em]">
+            
+                        <!-- Announcements -->
+                        <div class="flex-1 p-4 border rounded-lg shadow">
+                            <h2 class="font-bold text-lg ml-1">Announcements</h2>
+                            <a href="#"><p class="my-3 ml-2">Announcement 1</p></a>
+                            <hr class="mx-1"/>
+                            <a href="#"><p class="my-3 ml-2">Announcement 2</p></a>
+                            <hr class="mx-1"/>
+                            <a href="#"><p class="my-3 ml-2">Announcement 3</p></a>
+                            <hr class="mx-1"/>
+                            <a href="#"><p class="my-3 ml-2">Announcement 4</p></a>
+                            <hr class="mx-1"/>
+                            <a href="#"><p class="my-3 ml-2">Announcement 5</p></a>
+                            <hr class="mx-1"/>
+                            <a href="#"><p class="my-3 ml-2">Announcement 6</p></a>
+                            <hr class="mx-1"/>
+                            <a href="#"><p class="my-3 ml-2">Announcement 7</p></a>
+                            <hr class="mx-1"/>
+                            <a href="#"><p class="my-3 ml-2">Announcement 8</p></a>
+                        </div>
+            
+                        <!-- Trending -->
+                        <div class="flex-1 p-4 border rounded-lg shadow">
+                            <h2 class="font-bold text-lg ml-1">Trending</h2>
+                            <a href="#"><p class="my-3 ml-2">Trend 1</p></a>
+                            <hr class="mx-1"/>
+                            <a href="#"><p class="my-3 ml-2">Trend 2</p></a>
+                            <hr class="mx-1"/>
+                            <a href="#"><p class="my-3 ml-2">Trend 3</p></a>
+                        </div>
+            
+                    </section>
+            
+                </div>
+            
+            </main> 
+ 
+        </div>
+    </div>
+    <script src="./src/script.js"></script>
+</body>
+</html>

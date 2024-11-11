@@ -12,8 +12,8 @@ Intermediate HTML/CSS course:
 - Grid & Grid + flexbox
 
 - Projects:
-  - Sign-up Form [ [Live](https://cesarbrancalhao.github.io/Odin.Form/) | [Source](https://github.com/cesarbrancalhao/Odin.Form) ] - HTML, basic CSS
-  - Admin dashboard [ [Live](https://cesarbrancalhao.github.io/Odin.Dashboard/) | [Source](https://github.com/cesarbrancalhao/Odin.Dashboard) ] - HTML, CSS, Tailwind, JavaScript
+  - Sign-up Form [ [Live](https://cesarbrancalhao.github.io/Odin.Form/) | [Source](./Intermediate%20HTML%20&%20CSS%20course/Form/) ] - HTML, basic CSS
+  - Admin dashboard [ [Live](https://cesarbrancalhao.github.io/Odin.Dashboard/) | [Source](./Intermediate%20HTML%20&%20CSS%20course/Dashboard/) ] - HTML, CSS, Tailwind, JavaScript
 
 
 Advanced HTML/CSS course:
@@ -37,7 +37,7 @@ JavaScript course:
 - Git Remotes and Testing
 
 - Projects:
-  - Library [ [Live](https://github.com/cesarbrancalhao/Odin.Library) | [Source](https://github.com/cesarbrancalhao/Odin.Library) ] - HTML, CSS, JavaScript
+  - Library [ [Live](https://github.com/cesarbrancalhao/Odin.Library) | [Source](./JavaScript/Library/) ] - HTML, CSS, JavaScript
 
 
 React course:
